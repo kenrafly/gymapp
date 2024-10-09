@@ -1,0 +1,47 @@
+.join {
+  display: flex;
+  padding: 0 2rem;
+  gap: 10rem;
+}
+.left-j {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+hr {
+  position: absolute;
+  width: 10.5rem;
+  border: 2px solid orange;
+  border-radius: 20%;
+}
+.right-j {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.email-container {
+  display: flex;
+  gap: 3rem;
+  background-color: gray;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.email-container > input {
+  background-color: gray;
+  border: none;
+}
+::placeholder {
+  color: white;
+}
+.email-container > button {
+  background-color: var(--orange);
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .join {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

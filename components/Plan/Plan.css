@@ -1,0 +1,71 @@
+.plans-container {
+  display: flex;
+  flex-direction: column;
+}
+.programs-header {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.plan > img {
+  width: 2rem;
+}
+.plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: var(--caloryCard);
+  padding: 2rem;
+  width: 20rem;
+  height: auto;
+  gap: 1rem;
+  border-radius: 2rem;
+}
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.plan-price {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.plan:nth-child(2) {
+  background-color: orangered;
+  transform: scale(1.1);
+}
+.feature > img {
+  width: 2rem;
+}
+.see-more {
+  font-size: 0.9rem;
+}
+.plans-blur1 {
+  width: 50rem;
+  height: 30rem;
+  right: 0;
+  z-index: -1;
+}
+.plans-blur2 {
+  width: 50rem;
+  height: 30rem;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 700px) {
+  .plans {
+    flex-direction: column;
+  }
+  .plans-blur2 {
+    width: 7rem;
+  }
+}
