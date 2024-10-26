@@ -1,7 +1,7 @@
 import WebPage from "./WebPage.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "../components/Layout/Layout.jsx";
+import Layout from "./Layout.jsx";
 import DiscoverCourses from "../components/DiscoverCourses/DiscoverCourses.jsx";
 import ExerciseDetail from "../components/ExerciseDetail/ExerciseDetail.jsx";
 
