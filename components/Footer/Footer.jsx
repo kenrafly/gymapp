@@ -11,7 +11,9 @@ const Footer = () => {
       <div className="footer">
         <div className="social-links">
           <img src={linkedin} alt="" />
-          <img src={instagram} alt="" />
+          <a href="https://www.instagram.com/kenrafly/" target="blank">
+            <img src={instagram} alt=""></img>
+          </a>
           <img src={github} alt="" />
         </div>
         <div className="logo">

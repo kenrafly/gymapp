@@ -1,0 +1,10 @@
+.similar-exercises {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 3rem;
+}
+.similar-exercises a {
+  text-decoration: none;
+}

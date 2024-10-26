@@ -1,0 +1,51 @@
+.discover {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  align-items: center;
+  position: relative;
+  margin-top: 0;
+}
+.search {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+}
+.search > input {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  width: 60rem;
+}
+.search > button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--orange);
+  color: white;
+  font-weight: 600;
+}
+.body-parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  .discover {
+    flex-direction: column;
+  }
+  .discover > h1 {
+    align-self: center;
+  }
+  .search {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  .search > input {
+    width: 100%;
+  }
+  .body-parts {
+    width: 100%;
+  }
+}

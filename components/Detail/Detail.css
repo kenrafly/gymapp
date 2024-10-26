@@ -1,0 +1,49 @@
+.detail {
+  display: flex;
+  margin: 3rem;
+}
+.right {
+  flex: 1;
+}
+.left {
+  flex: 1;
+}
+.right > h1 {
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+.right > button {
+  border: none;
+}
+.exercise-detail {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 2rem 0;
+}
+.exercise-detail > img {
+  background-color: rgb(236, 236, 16);
+  width: 3rem;
+  border-radius: 2rem;
+}
+.exercise-detail > p {
+  font-size: large;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+  }
+  .right {
+    margin-bottom: 2rem;
+  }
+  .exercise-detail {
+    gap: 0.5rem;
+  }
+  .exercise-detail > img {
+    width: 2rem;
+  }
+  .exercise-detail > p {
+    font-size: medium;
+  }
+}

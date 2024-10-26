@@ -19,6 +19,9 @@
 .social-links > img {
   width: 2rem;
 }
+.social-links > a > img {
+  width: 2rem;
+}
 .social-links > img:hover {
   transform: scale(1.5);
   cursor: pointer;

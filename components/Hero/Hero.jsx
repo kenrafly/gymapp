@@ -6,6 +6,8 @@ import heroImageBack from "../../src/assets/hero_image_back.png";
 import heart from "../../src/assets/heart.png";
 import calories from "../../src/assets/calories.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   const transition = { type: "spring", duration: 2 };
   const mobile = window.innerWidth < 768 ? true : false;
@@ -58,6 +60,12 @@ const Hero = () => {
       </div>
 
       <div className="right-h">
+        <button className="btn-discover">
+          <Link style={{ textDecoration: "none" }} to="/discover">
+            Discover Course
+          </Link>
+        </button>
+
         <button className="btn">Join Now</button>
         <motion.div
           initial={{ right: "-1rem" }}
