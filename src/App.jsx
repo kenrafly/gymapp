@@ -1,23 +1,35 @@
-import React from "react";
-import Hero from "../components/Hero/Hero";
-import "./App.css";
-import Programs from "../components/Programs/Programs";
-import Reasons from "../components/Reasons/Reasons";
-import Plan from "../components/Plan/Plan";
-import Testimonials from "../components/Testimonials/Testimonials";
-import Join from "../components/Join/Join";
-import Footer from "../components/Footer/Footer";
+import WebPage from "./WebPage.jsx";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "../components/Layout/Layout";
+import DiscoverCourses from "../components/DiscoverCourses/DiscoverCourses.jsx";
+import ExerciseDetail from "../components/ExerciseDetail/ExerciseDetail.jsx";
+
+const router = createBrowserRouter([
+  {
+    path: "/", // Directly renders App without Navbar and Footer
+    element: <WebPage />,
+  },
+  {
+    path: "/", // Uses Layout with Navbar and Footer for other routes
+    element: <Layout />,
+    children: [
+      {
+        path: "discover",
+        element: <DiscoverCourses />,
+      },
+      {
+        path: "discover/:id",
+        element: <ExerciseDetail />,
+      },
+    ],
+  },
+]);
 
 const App = () => {
   return (
-    <div className="App">
-      <Hero />
-      <Programs />
-      <Reasons />
-      <Plan />
-      <Testimonials />
-      <Join />
-      <Footer />
+    <div>
+      <RouterProvider router={router} />
     </div>
   );
 };
